@@ -16,8 +16,8 @@ section.container{
     max-width: 1000px;
     margin: auto;
     text-align: center;
-    margin-top: 20px;
     font-family: 'Fredoka', sans-serif;
+    padding-bottom: 20px;
 }
 
 
@@ -29,7 +29,7 @@ h1.titol{
 }
 
 .container > p{
-    margin: 25px 0;
+    margin-top: 25px;
     font-size: 14px;
 }
 
