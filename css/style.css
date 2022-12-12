@@ -9,6 +9,24 @@ section.container{
     margin: auto;
     text-align: center;
     margin-top: 20px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+h1.titol{
+    color: fuchsia;
+    padding: 10px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.container > p{
+    margin: 25px 0;
+    font-size: 12px;
+}
+
+.container-rect::after, .rectangle::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .rectangle{
@@ -18,6 +36,7 @@ section.container{
     float: left;
     margin-right: 5%;
     margin-top: 20px;
+    box-shadow: 5px 5px 10px black;
 }
 
 .rectangle:nth-child(3n + 3){
@@ -31,4 +50,27 @@ figure{
 .rectangle img{
     width: 100%;
     float: left;
+}
+
+.rect-text{
+    float: left;
+    text-align: left;
+    font-size: 12px;
+    padding: 10px;
+}
+
+div.rect-text > p{
+    font-size: 10px;
+}
+
+.rect-text :last-child{
+    margin-bottom: 0;
+}
+
+.rect-text > *{
+    margin-bottom: 8px;
+}
+
+.rect-text p.mail-blue{
+    color: blue;
 }
