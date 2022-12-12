@@ -51,8 +51,7 @@ h1.titol{
 .rectangle > figure{
     width: 25%;
 }
-
-.rectangle figure img{
+figure img{
     max-width: 100%;
     float: left;
 }
@@ -68,7 +67,7 @@ h1.titol{
     margin-bottom: 8px;
 }
 
-.rectangle .rect-text > p{
+.rect-text > p{
     font-size: 10px;
 }
 
