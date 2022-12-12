@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+.container-rect::after, .rectangle::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*CONTAINER*/
 section.container{
     max-width: 1000px;
     margin: auto;
@@ -12,26 +20,23 @@ section.container{
     font-family: 'Fredoka', sans-serif;
 }
 
+
+/*TITOLO E PARAGRAFO*/
 h1.titol{
-    color: fuchsia;
+    color: rgb(178, 0, 0);
     padding: 10px;
     font-family: 'Fredoka One', cursive;
 }
 
 .container > p{
     margin: 25px 0;
-    font-size: 12px;
+    font-size: 14px;
 }
 
-.container-rect::after, .rectangle::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.rectangle{
+/*RETTANGOLI DENTRO AL CONTAINER*/
+.container-rect .rectangle{
     width: 30%;
-    background-color: black;
+    background-color: rgb(0, 1, 38);
     color: white;
     float: left;
     margin-right: 5%;
@@ -43,32 +48,32 @@ h1.titol{
     margin-right: 0;
 }
 
-figure{
+.rectangle > figure{
     width: 25%;
 }
 
-.rectangle img{
+.rectangle figure img{
     width: 100%;
     float: left;
 }
 
-.rect-text{
+.rectangle .rect-text{
     float: left;
     text-align: left;
     font-size: 12px;
     padding: 10px;
 }
 
-div.rect-text > p{
+.rect-text > *{
+    margin-bottom: 8px;
+}
+
+.rectangle .rect-text > p{
     font-size: 10px;
 }
 
 .rect-text :last-child{
     margin-bottom: 0;
-}
-
-.rect-text > *{
-    margin-bottom: 8px;
 }
 
 .rect-text p.mail-blue{
